@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Best view in desktop -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width ,intial scal=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eazy ERP 4.0</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+     *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Open Sans', sans-serif;
+     }
+     .header{
+        min-height: 100vh;
+        width: 100%;
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://www.innovapptive.com/hubfs/Top-4-Emerging-Technologies-Boosting-Operational-&-Technicians%E2%80%99-Productivity-in-Field-Service-BLOG-COVER-20200921.png);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    
+    }
+    nav{
+       display: flex;
+       padding: 0% 5%;
+       justify-content:space-between;
+       align-items:center;
+    }
+    nav img{
+       
+        width: 130px;
+    }
+    .nav-links{
+        flex:1;
+        text-align:right;
+
+    }
+    .nav-links ul li {
+        list-style:none;
+        display: inline-block;
+        padding: 8px 12px;
+        position: relative;
+    }
+    .nav-links ul li a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 15px;
+        
+    }
+    .nav-links ul li ::after{
+        content: '';
+        width: 0;
+        height: 2px;
+        background: #f24516;
+        display: block;
+        margin: auto;
+        transition: 1s;
+    }
+    .nav-links ul li :hover::after{
+        width: 100%;
+    }
+    #res{
+        text-align: center;
+        position: absolute;
+        top: 70%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+    #reserve{
+        
+        display: inline-block;
+        text-decoration: none;
+        color: rgb(247, 248, 248);
+        border: 1px solid #fff;
+        padding: 12px 34px;
+        font-size: 13px;
+        background: transparent;
+        cursor: pointer;
+    }
+    .textbox{
+        width: 90%;
+        color: rgb(245, 246, 245);
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        text-align:center;
+
+    }
+    .textbox h1{
+        font-size: 62px;
+    }
+    #upper{
+        width: 200%;
+        color: #ccc9d2;
+        position: absolute;
+        top: 100%;
+        left:10%;
+        transform:translate(-30%,-70%);
+        text-align:center;
+        cursor: pointer;
+
+    }
+    #reserve:hover{
+        border: 1px solid #0c0c0c;
+        background: #0a0a0a;
+       
+        transition: 1s;
+    }
+    .hero-btn{
+        
+        display: inline-block;
+        text-decoration: none;
+        color: rgb(247, 248, 248);
+        border: 1px solid #fff;
+        padding: 12px 34px;
+        font-size: 13px;
+        background: transparent;
+       
+        cursor: pointer;
+    }
+    .hero-btn:hover{
+        border: 1px solid #0c0c0c;
+        background: #0a0a0a;
+       
+        transition: 1s;
+    }
+    .about{
+        width:80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 40px;
+    }
+    .about h1{
+        color: #0d048e;
+        font-size: 40px;
+        font-weight: 600;
+    }
+    .about p{
+        color: rgb(35, 2, 94);
+        font-size: 16px;
+        font-weight: 350;
+        line-height: 22px;
+        padding: 10px;
+        flex-basis: 31%;
+        background: #ccf7fa;
+        border-radius: 10px;
+        margin-bottom: 5%;
+        padding: 20px 12px;
+        box-sizing: border-box;
+        
+
+    }
+    .con{
+        margin: 100px auto;
+        width: 80%;
+        
+        background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(https://www.shutterstock.com/image-photo/woman-workplace-manager-doing-business-260nw-1765316327.jpg);
+        background-size: cover;
+        border-radius: 10px;
+        text-align: center;
+        padding: 100px 0;
+    }
+  .contact-col{
+    width:80%;
+    margin:auto;
+  }
+  .edit{
+    color: rgb(35, 2, 94);
+        font-size: 16px;
+        font-weight: 350;
+        line-height: 22px;
+        padding: 10px;
+        flex-basis: 31%;
+        background: #f0e6b3;
+        border-radius: 10px;
+        margin-bottom: 5%;
+        margin-left: 2%;
+        padding: 20px 12px;
+        box-sizing: border-box;
+  width: 30%;
+  
+  float: left;
+
+  }
+  body{
+    width: 100%;
+    height: 100%;
+    margin-bottom:0px;
+    padding:0px;
+    overflow-x:hidden ;
+  }
+    </style>
+    
+</head>
+<body>
+    <section class="header">
+    <nav>
+        <a href="index.html"><img src="data:image/png;base64,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"></a>
+        <div class ="nav-links">
+            <ul>
+                <li> <a href="">HOME</a></li>
+                <li> <a href="">ABOUT</a></li>
+                <li> <a href="">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="textbox">
+        <h1>Fusion ERP 4.0</h1><br>
+        <h2 id="upper">Bridge towards Simpler Operations!</h2>
+       
+
+    </div>
+    <div id="res">
+    <a href="" id="reserve">Reserve your seat !</a>
+</div>
+    </section>
+    <!-- about -->
+    <section class="about">
+        <h1>ABOUT US</h1>
+        <p>Enterprise Resource Planning System, a software which made a significant impact in the life of Indian Manufacturers by remodeling their existing manual system of working to Automating it,
+        
+        <br><br><br>
+        A system which was ideally designed to track the activities has travelled leaps and miles from being a mere tracking system to a virtual member that monitors, tracks and guides the users in order to streamline and maintain the operational efficiency of the business.
+        
+        <br><br><br>
+        Ever Since 2001, the market has been penetrated with hundreds of ERP players, everyone stating themselves as the best. As we digged down more and more we realized that most of the small & mid size companies still resisting to move towards IT due to multiple reason such as budget constraints, hassle of using 2 different softwares, Security issues, to name a few
+        
+        <br><br><br>
+        That is how Eazy came into picture with a vision of standing out from Rest with its unique preposition and simultaneously catering the key challenges of SME Manufacturers thereby making their lives Easy!
+            This led to the launch of India’s 1st Tally Integrated ERP, Eazy ERP in 2007. An ERP which came with the simplicity of Tally and Power of ERP
+            </p>
+            
+    </section>
+    <section class="con">
+        <!-- contact -->
+        <a href=""  class="hero-btn">CONTACT US</a>
+
+    </section>
+    <section class="contact-col">
+    <div class="edit">
+        <i class="fah"></i>
+        <span>
+            <h5>XYZ Road , ABC building</h5>
+            <p>Gurgaon,Haryana,IN</p>
+            <br>
+        </span>
+    </div>
+    <div class="edit">
+        <i class="fap"></i>
+        <span>
+            <h5>+91 8745885500</h5>
+            <p>Monday to Saturday,10AM to 6PM</p>
+            <br>
+        </span>
+    </div>
+    <div class="edit">
+        <i class="fae"></i>
+        <span>
+            <h5>contact@eazydms.com</h5>
+            <p>Email Us</p>
+            <br>
+        </span>
+    </div>
+    <br><br>
+    <p> </p>
+    
+    </section>
+</body>
+</html>
